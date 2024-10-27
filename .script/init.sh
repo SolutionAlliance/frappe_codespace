@@ -2,13 +2,13 @@
 
 set -e
 
-if [[ -f "/workspaces/frappe_codespace/frappe-bench/apps/frappe" ]]
+if [[ -f "/workspace/frappe_codespace" ]]
 then
     echo "Bench already exists, skipping init"
     exit 0
 fi
 
-rm -rf /workspaces/frappe_codespace/.git
+rm -rf /workspace/frappe_codespace/.git
 
 source /home/frappe/.nvm/nvm.sh
 nvm alias default 18
