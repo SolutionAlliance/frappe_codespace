@@ -17,6 +17,8 @@ nvm use 18
 echo "nvm use 18" >> ~/.bashrc
 cd /workspace
 
+pip3 install frappe-bench
+
 bench init \
 --ignore-exist \
 --skip-redis-config-generation \
