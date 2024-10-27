@@ -10,7 +10,10 @@ fi
 
 rm -rf /workspace/frappe_codespace/.git
 
-source /home/frappe/.nvm/nvm.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+
+nvm install 18
 nvm alias default 18
 nvm use 18
 
