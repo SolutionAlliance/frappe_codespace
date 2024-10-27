@@ -10,4 +10,5 @@ image:
 #     onOpen: ignore
 
 tasks:
+  - command: cd /workspace/frappe_codespace/.script/ && docker-compose up
   - command: cd /workspace/frappe_codespace/.script/ && bash init.sh
